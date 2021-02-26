@@ -14,11 +14,11 @@ spec:
       spec:
         containers:
         - name: aspnet-people-api-pod
-          image: kamilkasprzyk/people:{{BUILD_NUMBER}}          
+          image: kamilkasprzyk/people:v1          
           ports:
           - containerPort: 80
-        imagePullSecrets:
-          - name: regcred
+#        imagePullSecrets:
+#         - name: regcred
 ---
 apiVersion: v1
 kind: Service
